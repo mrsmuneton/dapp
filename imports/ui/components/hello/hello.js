@@ -11,6 +11,7 @@ Template.hello.helpers({
     return Template.instance().counter.get();
   },
   currentBlock() {
+    console.log(web3.eth.accounts);
     console.log(EthBlocks.latest);
       return EthBlocks.latest.hash;
   }
